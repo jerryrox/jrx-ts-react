@@ -5,6 +5,8 @@ Variant for React projects.
 
 # Versions
 ## 0.0.3 (WIP)
+### New
+- Added `useAsyncEffect` hook.
 ### Fixes
 - Added peerDependency for react and react-dom so other dependencies for them don't get included in build.
 
