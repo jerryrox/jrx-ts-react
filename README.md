@@ -4,7 +4,7 @@ My personal Typescript library.
 Variant for React projects.
 
 # Versions
-## 0.0.3 (WIP)
+## 0.0.3
 ### New
 - Added `useAsyncEffect` hook.
 ### Fixes
