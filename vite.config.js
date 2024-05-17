@@ -3,6 +3,7 @@ import dts from "vite-plugin-dts";
 import react from "@vitejs/plugin-react";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { externalizeDeps } from "vite-plugin-externalize-deps";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -11,8 +12,9 @@ const __dirname = dirname(__filename);
 export default defineConfig({
   build: {
     sourcemap: true,
+    emptyOutDir: true,
     lib: {
-      entry: resolve(__dirname, "src/main.ts"),
+      entry: resolve(__dirname, "src/index.ts"),
       name: "jrx-ts-react",
       formats: ["es"],
       fileName: (format) => `index.${format}.js`,
@@ -35,5 +37,6 @@ export default defineConfig({
   plugins: [
     react(),
     dts(),
+    externalizeDeps(),
   ],
 })

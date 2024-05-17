@@ -1,9 +1,9 @@
 {
   "name": "jrx-ts-react",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "module": "./dist/index.es.js",
-  "types": "./dist/main.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -34,12 +34,18 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "jrx-ts": "^0.2.0",
+    "jrx-ts": "^0.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.8.1",
+    "vite-plugin-externalize-deps": "^0.8.0",
     "vitest": "^1.4.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "jrx-ts": "^0.2.2"
   }
 }
