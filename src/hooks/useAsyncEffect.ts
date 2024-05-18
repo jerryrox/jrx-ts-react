@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 type IsAliveFunc = () => boolean;
 
-export default function useAsyncEffect(
+export function useAsyncEffect(
     task: (isAlive: IsAliveFunc) => Promise<void>,
     dispose?: () => void,
     deps?: React.DependencyList,
