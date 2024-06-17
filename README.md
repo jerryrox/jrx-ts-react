@@ -4,6 +4,10 @@ My personal Typescript library.
 Variant for React projects.
 
 # Versions
+## 1.0.0
+### Changes
+- Updated to work with `jrx-ts` version 1.x.x.
+
 ## 0.0.3
 ### New
 - Added `useAsyncEffect` hook.

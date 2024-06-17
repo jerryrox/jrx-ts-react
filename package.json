@@ -34,7 +34,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "jrx-ts": "^0.2.2",
+    "jrx-ts": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.2.2",
@@ -44,8 +44,8 @@
     "vitest": "^1.4.0"
   },
   "peerDependencies": {
+    "jrx-ts": "^1.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "jrx-ts": "^0.2.2"
+    "react-dom": "^18.2.0"
   }
 }
